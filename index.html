@@ -10,6 +10,22 @@
         <style>
             body{
                 background: #eee;
+                margin: 3rem;
+            }
+
+            .grid-container {
+                background: red;
+                border: 1px solid black;
+            }
+
+            .grid-column {
+                align-items: center;
+                background: #fff;
+                border: 1px solid black;
+                display: flex;
+                height: 10rem;
+                justify-content: center;
+                text-align: center;
             }
         </style>
     </head>
@@ -18,6 +34,22 @@
         <p>A design system is a complete set of standards intended to manage design at scale using reusable components and patterns.</p>
         <p>This design system will be used by NatSci web and digital experiences.</p>
 
+        <h2>Grid System</h2>
+        <p>NatSci websites and applications are built using a responsive 12-column grid system with a 16px grid gap.</p>
+        <div class="grid-container">
+            <div class="grid-column">1</div>
+            <div class="grid-column">2</div>
+            <div class="grid-column">3</div>
+            <div class="grid-column">4</div>
+            <div class="grid-column">5</div>
+            <div class="grid-column">6</div>
+            <div class="grid-column">7</div>
+            <div class="grid-column">8</div>
+            <div class="grid-column">9</div>
+            <div class="grid-column">10</div>
+            <div class="grid-column">11</div>
+            <div class="grid-column">12</div>
+        </div>
         <script src="" async defer></script>
     </body>
 </html>
