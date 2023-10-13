@@ -1,4 +1,5 @@
 # Building Blocks
+* Building blocks are individual pieces that can be used independently or can be combined to create larger components.
 
 ## Grid System
 * NatSci websites and applications are built using a responsive 12-column grid system with a 16px grid gap. All page layouts and screens use this grid.
@@ -28,16 +29,6 @@
 * resting
 * hover & focus
 
-## Alerts
-* Provide contextual feedback messages for typical user actions or can alert a user to important information. 
-### Type
-* Informational - blue in color
-* Danger - red in color
-* Warning - orange in color
-* Success - green in color
-### States
-* Persistent
-* Dismissable
 
 ## Form Elements
 * Label 
@@ -62,6 +53,27 @@
 * Desktop
 * Mobile
 
-  
+## Tables
+* Need to be responsive for mobile. Scroll from side-to-side is "easiest" solution.
+
+# Components
+* Components are built from individual building blocks to form a more complex element.
+
+## Alerts
+* Provide contextual feedback messages for typical user actions or can alert a user to important information. Can include a button or link to more information.
+### Type
+* Informational - blue in color
+* Danger - red in color
+* Warning - orange in color
+* Success - green in color
+### States
+* Persistent
+* Dismissable
+
+## Cards
+
+## Accordion
+
+
 
 
