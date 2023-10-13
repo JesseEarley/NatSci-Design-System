@@ -36,7 +36,7 @@
 * Warning - orange in color
 * Success - green in color
 ### States
-* Persisten
+* Persistent
 * Dismissable
 
 ## Form Elements
