@@ -247,19 +247,23 @@
         
         <h3>Single Line Input</h3>
         <h4>Display</h4>
+        <label for="Input">Label for Single Line Input</label>
         <input id="Input" type="text">
 
         <h4>Code</h4>
         <pre><code>
-            &lt;input id=&quot;input&quot; type=&quot;text&quot;&gt;
+            &lt;label for=&quot;Input&quot;&gt;Label for Single Line Input&lt;/label&gt;
+            &lt;input id=&quot;Input&quot; type=&quot;text&quot;&gt;
         </code></pre>
 
         <h3>Multi Line Input</h3>
         <h4>Display</h4>
+        <label for="MultiLine">Label for Multi Line Input</label>
         <textarea id="MultiLine" type="text"></textarea>
 
         <h4>Code</h4>
         <pre><code>
+            &lt;label for=&quot;MultiLine&quot;&gt;Label for Multi Line Input&lt;/label&gt;
             &lt;textarea id=&quot;MultiLine&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;
         </code></pre>
 
@@ -285,9 +289,10 @@
             &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;two&quot;&gt;Two&lt;/label&gt;        
         </code></pre>
 
-        <h3>Dropdown</h3>
+        <h3>Select</h3>
         <h4>Display</h4>
-        <select>
+        <label for="Select">Label for Select</label>
+        <select id="Select">
             <option value="">Please Select an Option</option>
             <option value="one">One</option>
             <option value="two">Two</option>
@@ -295,24 +300,41 @@
 
         <h4>Code</h4>
         <pre><code>
-            &lt;select&gt;
+            &lt;label for=&quot;Select&quot;&gt;Label for Select&lt;/label&gt;
+            &lt;select id=&quot;Select&quot;&gt;
                 &lt;option value=&quot;&quot;&gt;Please Select an Option&lt;/option&gt;
                 &lt;option value=&quot;one&quot;&gt;One&lt;/option&gt;
                 &lt;option value=&quot;two&quot;&gt;Two&lt;/option&gt;
-            &lt;/select&gt;    
+            &lt;/select&gt;  
         </code></pre>
 
         <h3>Upload</h3>
         <h4>Display</h4>
+        <label for="Upload">Label for Upload</label>
         <input id="Upload" type="file">
 
         <h4>Code</h4>
         <pre><code>
-            &lt;select&gt;
-                &lt;option value=&quot;&quot;&gt;Please Select an Option&lt;/option&gt;
-                &lt;option value=&quot;one&quot;&gt;One&lt;/option&gt;
-                &lt;option value=&quot;two&quot;&gt;Two&lt;/option&gt;
-            &lt;/select&gt;    
+            &lt;label for=&quot;Upload&quot;&gt;Label for Upload&lt;/label&gt;
+            &lt;input id=&quot;Upload&quot; type=&quot;file&quot;&gt;  
+        </code></pre>
+
+        <h3>Submit Button</h3>
+        <h4>Display</h4>
+        <button type="submit">Submit</button>
+
+        <h4>Code</h4>
+        <pre><code>
+            &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+        </code></pre>
+
+        <h3>Reset Button</h3>
+        <h4>Display</h4>
+        <button type="reset">Reset</button>
+
+        <h4>Code</h4>
+        <pre><code>
+            &lt;button type=&quot;reset&quot;&gt;Reset&lt;/button&gt;
         </code></pre>
 
         <hr>
