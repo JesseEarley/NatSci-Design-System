@@ -347,35 +347,39 @@
         <hr>
 
         <h2 id="Tables">Tables</h2>
-        <p>Tables are used for displaying tabular data in columns and rows. All tables should be responsive and viewable on mobile devices.</p>
+        <p>Tables are used for displaying tabular data in columns and rows. All tables should be responsive and viewable on mobile devices. The ability to be responsive is contained in the tableContainer class on the surrounding div element.</p>
 
         <h3>Table</h3>
         <h4>Display</h4>
-        <table>
-            <caption>Monthly savings table</caption>
-            <tr>
-              <th>Month</th>
-              <th>Savings</th>
-            </tr>
-            <tr>
-              <td>January</td>
-              <td>$100</td>
-            </tr>
-          </table> 
+        <div class="tableContainer">
+            <table>
+                <caption>Monthly savings table</caption>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+            </table> 
+        </div>
 
         <h4>Code</h4>
         <pre><code>
-            &lt;table&gt;
-                &lt;caption&gt;Monthly savings table&lt;/caption&gt;
-                &lt;tr&gt;
-                    &lt;th&gt;Month&lt;/th&gt;
-                    &lt;th&gt;Savings&lt;/th&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;January&lt;/td&gt;
-                    &lt;td&gt;$100&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/table&gt; 
+            &lt;div class=&quot;tableContainer&quot;&gt;
+                &lt;table&gt;
+                    &lt;caption&gt;Monthly savings table&lt;/caption&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Month&lt;/th&gt;
+                        &lt;th&gt;Savings&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;January&lt;/td&gt;
+                        &lt;td&gt;$100&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt; 
+            &lt;/div&gt;
         </code></pre>
 
 
