@@ -5,3 +5,13 @@
 table{
     width: 100%;
 }
+
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+th{
+    text-align: left;
+}
