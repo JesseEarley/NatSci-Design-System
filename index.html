@@ -38,10 +38,43 @@
                 justify-content: center;
                 text-align: center;
             }
+            .backToTop{
+                background-color: #fff;
+                border: 1px solid #000;
+                bottom: 1rem;
+                border-radius: .5rem;
+                display: flex;
+                height: 50px;
+                position: fixed;
+                right: 1rem;
+                width: 50px;   
+            }
+            .backToTop a{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+            }
+
+            .backtoTop svg{
+                display: block;             
+            }
         </style>
     </head>
     <body>
-        <h1>NatSci Design System</h1>
+        <div class="backToTop">
+            <a href="#Top" aria-label="Back to top">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <svg fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 330 330" xml:space="preserve">
+                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                </svg>
+            </a>
+        </div>
+        <h1 id="Top">NatSci Design System</h1>
         <p>A design system is a complete set of standards intended to manage design at scale using reusable components and patterns.</p>
         <p>This design system will be used by NatSci web and digital experiences.</p>
         <div class="toc">
@@ -58,7 +91,7 @@
             </ul>
             <h3>Components</h3>
             <ul>
-                <li><a href="#">TBD</a></li>
+                <li><a href="#Alerts">Alerts</a></li>
             </ul>
         </div>
 
@@ -489,16 +522,21 @@
                 &lt;p&gt;This is a success alert.&lt;/p&gt;
             &lt;/div&gt;
         </code></pre>
- 
-
      
        <p>They may include a button to view more information related to the alert.</p>
        <h3>Display</h3>
-       
         <div class="alert alert-info" role="alert">
             <p>This is an informational alert. Click the button to read more about this alert</p>
             <a href="#" class="anchorButton">Read More</a>
         </div>
+
+        <h3>Code</h3>
+        <pre><code>
+            &lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+                &lt;p&gt;This is an informational alert. Click the button to read more about this alert&lt;/p&gt;
+                &lt;a href=&quot;#&quot; class=&quot;anchorButton&quot;&gt;Read More&lt;/a&gt;
+            &lt;/div&gt;
+        </code></pre>
 
     </body>
 </html>
