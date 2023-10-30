@@ -217,6 +217,16 @@
         <pre><code>
             &lt;a href=&quot;&quot; title=&quot;Link title&quot;&gt;This is a link&lt;/a&gt;
         </code></pre>
+
+        <p>They can also look like buttons</p>
+        <h3>Display</h3>
+        <a href="" class="anchorButton title="Link title">This is a link button</a>
+
+        <h3>Code</h3>
+        <pre><code>
+            &lt;a href=&quot;&quot; class=&quot;anchorButton title=&quot;Link title&quot;&gt;This is a link button&lt;/a&gt;
+        </code></pre>
+
         <hr>
         <h2 id="Buttons">Button</h2>
         <p>A button initiates an action.</p>
@@ -436,6 +446,59 @@
 
 
 
+        <h2 id="Alerts">Alerts</h2>
+        <p>Alerts provide contextual feedback messages - they may or may not be dismissable depending on how and where they are used.</p>
+        <p>There are 4 types of alerts:</p>
+        <ul>
+            <li>Informational</li>
+            <li>Warning</li>
+            <li>Danger</li>
+            <li>Success</li>
+        </ul>
+        <h3>Display</h3>
+        <div class="alert alert-info" role="alert">
+            <p>This is an informational alert.</p>
+        </div>
+        <div class="alert alert-warning" role="alert">
+            <p>This is a warning alert.</p>
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+           <p>This is a danger alert.</p>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+            This is a success alert.
+        </div>
+
+        <h3>Code</h3>
+        <pre><code>
+            &lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+                &lt;p&gt;This is an informational alert.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+                &lt;p&gt;This is a warning alert.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+                &lt;p&gt;This is a danger alert.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+                &lt;p&gt;This is a success alert.&lt;/p&gt;
+            &lt;/div&gt;
+        </code></pre>
+ 
+
+     
+       <p>They may include a button to view more information related to the alert.</p>
+       <h3>Display</h3>
+       
+        <div class="alert alert-info" role="alert">
+            <p>This is an informational alert. Click the button to read more about this alert</p>
+            <a href="#" class="anchorButton">Read More</a>
+        </div>
 
     </body>
 </html>
