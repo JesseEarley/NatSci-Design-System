@@ -541,11 +541,55 @@
 
 
         <h2 id="Figures">Figures</h2>
-        <p>A Figure marks up a photo in a document with a caption. It has the ability to float left or right so that text can wrap around it.</p>
+        <p>A Figure marks up a photo in a document with a caption. It has the ability to float left or right so that text can wrap around it. This is often used with News Articles</p>
         <h3>Display</h3>
         <figure>
             <img src="/images/natsci.png" alt="NatSci Logo">
             <figcaption>Spartan helmet against a green to black vertical gradient with the words Natural Science</figcaption>
         </figure>
+
+        <h3>Code</h3>
+        <pre><code>
+            &lt;figure&gt;
+                &lt;img src=&quot;/images/natsci.png&quot; alt=&quot;NatSci Logo&quot;&gt;
+                &lt;figcaption&gt;Spartan helmet against a green to black vertical gradient with the words Natural Science&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </code></pre>
+
+        <h2 id="Cards">Cards</h2>
+        <p>A Card is a flexible and extensible content contqainer. It includes options for a header, body, footer and inclusion of a photo.</p>
+        <h3>Card with Header</h3>
+        <h4>Display</h4>
+        <div class="card">
+            <div class="card-header">
+                <h3>Card Title</h3>
+            </div>
+            <div class="card-body">
+                <p>This is some card body text.</p>
+            </div>
+        </div>
+
+        <h3>Card with Photo</h3>
+        <h4>Display</h4>
+        <div class="card">
+            <div class="card-photo">
+                <img src="/images/natsci.png" alt="Natsci Logo">
+            </div>
+            <div class="card-header">
+                <h3>Card Title</h3>
+            </div>
+            <div class="card-body">
+                <p>This is some card body text.</p>
+            </div>
+        </div>
+
+        <h3>Code</h3>
+        <pre><code>
+            &lt;figure&gt;
+                &lt;img src=&quot;/images/natsci.png&quot; alt=&quot;NatSci Logo&quot;&gt;
+                &lt;figcaption&gt;Spartan helmet against a green to black vertical gradient with the words Natural Science&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </code></pre>
+
     </body>
 </html>
