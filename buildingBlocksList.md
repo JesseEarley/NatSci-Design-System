@@ -70,6 +70,8 @@
 * Persistent
 * Dismissable
 
+## Figures
+
 ## Cards
 
 ## Accordion
