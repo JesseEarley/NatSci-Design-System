@@ -1,7 +1,9 @@
+.pullLeft,
 .pull-left{
     float: left;
 }
 
+.pullRight,
 .pull-right{
     float: right;
 }
