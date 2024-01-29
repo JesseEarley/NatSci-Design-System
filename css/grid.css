@@ -5,6 +5,10 @@
     margin: 1rem 0;
 }
 
+.grid-column-span-1{
+    grid-column: span 1;
+}
+
 
 .grid-column-span-2{
     grid-column: span 2;
@@ -46,7 +50,7 @@
   }
 
   @media screen and (max-width: 576px) {
-    .grid-column,
+    .grid-column-span-1,
     .grid-column-span-2,
     .grid-column-span-3,
     .grid-column-span-4,
