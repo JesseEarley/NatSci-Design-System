@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -558,60 +558,94 @@
         </code></pre>
 
         <h2 id="Cards">Cards</h2>
-        <p>A Card is a flexible and extensible content contqainer. It includes options for a header, body, footer and inclusion of a photo.</p>
-        <h3>Card with Header & optional CTA</h3>
+        <p>A Card is a flexible and extensible content container. It should be contained within a CSS Grid element to restrict card width.</p>
+        <h3>Content Card</h3>
+        <p>A cotent card is for general use. It requires a photo, header and link with an optional summary.</p>
+        <p>Helper classes include:</p>
+        <ul>
+            <li><strong>Left alignment: .card__heading-left, .card__summary-left, .card__link-left</strong></li>
+            <li><strong>Center alignment: .card__heading-center, .card__summary-center, .card__link-center</strong></li>
+            <li><strong>Right alignment: .card__heading-right, .card__summary-right, .card__link-right</strong></li>
+        </ul>
+        <h3>Card with iamge, heading, summary and link using the left align helper classes</h3>
         <h4>Display</h4>
         <div class="card">
-            <div class="card__header">
-                <h3>Card Title</h3>
-            </div>
-            <div class="card__body">
-                <p>This is some card body text.</p>
-            </div>
-            <div class="card__cta"><a href="#">CTA Text</a></div>
+            <img class="card__image" src="https://natsci.msu.edu/_assets/images/events-images/sparty_woodburning.png" alt="Sparty Image">
+            <h2 class="card__heading card__heading-left">My Card Component</h2>
+            <div class="card__summary card__summary-left">My summary</div>
+            <a class="card__link card__link-left" href="www.google.com">Learn More</a>
         </div>
 
         <h4>Code</h4>
         <pre><code>
         &lt;div class=&quot;card&quot;&gt;
-            &lt;div class=&quot;card__header&quot;&gt;
-                &lt;h3&gt;Card Title&lt;/h3&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;card__body&quot;&gt;
-                &lt;p&gt;This is some card body text.&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;card__cta&quot;&gt;&lt;a href=&quot;#&quot;&gt;CTA Text&lt;/a&gt;&lt;/div&gt;
+            &lt;img class=&quot;card__image&quot; src=&quot;https://natsci.msu.edu/_assets/images/events-images/sparty_woodburning.png&quot; alt=&quot;Sparty Image&quot;&gt;
+            &lt;h2 class=&quot;card__heading card__heading-left&quot;&gt;My Card Component&lt;/h2&gt;
+            &lt;div class=&quot;card__summary card__summary-left&quot;&gt;My summary&lt;/div&gt;
+            &lt;a class=&quot;card__link card__link-left&quot; href=&quot;www.google.com&quot;&gt;Learn More&lt;/a&gt;
         &lt;/div&gt;
         </code></pre>
 
-        <h3>Card with Photo</h3>
+        <h3>Contact Card</h3>
+        <p>A contact card is for presenting contact information about a person. It requires a photo, contact name and contact title with an optional contact phone, contact email and bio link.</p>
+        <p>Helper classes include:</p>
+        <ul>
+            <li><strong>Left alignment: .card__heading-left, .card__summary-left, .card__link-left</strong></li>
+            <li><strong>Center alignment: .card__heading-center, .card__summary-center, .card__link-center</strong></li>
+            <li><strong>Right alignment: .card__heading-right, .card__summary-right, .card__link-right</strong></li>
+        </ul>
+        <h3>Card with iamge, heading, summary and link using the left align helper classes</h3>
         <h4>Display</h4>
-        <div class="card">
-            <div class="card__photo">
-                <img src="/images/natsci.png" alt="Natsci Logo">
-            </div>
-            <div class="card__header">
-                <h3>Card Title</h3>
-            </div>
-            <div class="card__body">
-                <p>This is some card body text.</p>
+        <div class="contactCard">
+            <div class="contactCard__image"><img title=" Photograph" src="https://natsci.msu.edu/_assets/images/events-images/sparty_woodburning.png" alt=" Photograph" /></div>
+            <div class="contactCard__info">
+                <div class="contactCard__name">
+                    <strong>Person Name</strong>
+                </div>
+                <div class="contactCard__title">
+                    <em>Person Title</em>
+                </div>
+                <div class="contactCard__phone contactCard__phone-display">
+                    <span aria-hidden="true" class="contactCard__icon fa fa-phone"></span>
+                    <a href="tel:">555-555-5555</a>
+                </div>
+                <div class="contactCard__email contactCard__email-display">
+                    <span aria-hidden="true" class="contactCard__icon fa fa-envelope"></span>
+                        <a href="mailto:">email@mail.com</a>
+                </div>
+                <div class="contactCard__bioLink contactCard__bioLink-display">
+                        <a href="https://www.google.com">View Bio</a>
+                </div>
             </div>
         </div>
 
         <h4>Code</h4>
         <pre><code>
-        &lt;div class=&quot;card&quot;&gt;
-            &lt;div class=&quot;card__photo&quot;&gt;
-                &lt;img src=&quot;/images/natsci.png&quot; alt=&quot;Natsci Logo&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;card__header&quot;&gt;
-                &lt;h3&gt;Card Title&lt;/h3&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;card__body&quot;&gt;
-                &lt;p&gt;This is some card body text.&lt;/p&gt;
+        &lt;div class=&quot;contactCard&quot;&gt;
+            &lt;div class=&quot;contactCard__image&quot;&gt;&lt;img title=&quot; Photograph&quot; src=&quot;https://natsci.msu.edu/_assets/images/events-images/sparty_woodburning.png&quot; alt=&quot; Photograph&quot; /&gt;&lt;/div&gt;
+            &lt;div class=&quot;contactCard__info&quot;&gt;
+                &lt;div class=&quot;contactCard__name&quot;&gt;
+                    &lt;strong&gt;Person Name&lt;/strong&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;contactCard__title&quot;&gt;
+                    &lt;em&gt;Person Title&lt;/em&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;contactCard__phone contactCard__phone-display&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot; class=&quot;contactCard__icon fa fa-phone&quot;&gt;&lt;/span&gt;
+                    &lt;a href=&quot;tel:&quot;&gt;555-555-5555&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;contactCard__email contactCard__email-display&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot; class=&quot;contactCard__icon fa fa-envelope&quot;&gt;&lt;/span&gt;
+                        &lt;a href=&quot;mailto:&quot;&gt;email@mail.com&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;contactCard__bioLink contactCard__bioLink-display&quot;&gt;
+                        &lt;a href=&quot;https://www.google.com&quot;&gt;View Bio&lt;/a&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
+
         </code></pre>
+
 
     </body>
 </html>
