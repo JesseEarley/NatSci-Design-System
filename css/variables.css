@@ -1,0 +1,8 @@
+:root {
+    --grid__container--largeWidth: 1320px;
+    --grid__container--mediumWidth: 1140px;
+    --grid__container--smallWidth: 960px;
+
+    /*Colors*/
+    --msuGreen: #18453b;
+  }
