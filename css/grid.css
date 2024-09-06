@@ -5,6 +5,30 @@
     margin: 1rem 0;
 }
 
+.grid__container--large{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: var(--grid__container--largeWidth);
+}
+
+.grid__container--medium{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: var(--grid__container--mediumWidth);
+}
+
+.grid__container--small{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: var(--grid__container--smallWidth);
+}
+
 .grid__column--span1{
     grid-column: span 1;
 }
