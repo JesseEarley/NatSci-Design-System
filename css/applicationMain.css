@@ -1,3 +1,7 @@
+body{
+    background: #333;
+}
+
 .applicationMain{
     background: #f0f0f0;
     min-height: 500px;
