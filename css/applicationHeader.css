@@ -1,3 +1,9 @@
 .applicationHeader{
     background: var(--msuGreen);
+    padding: 2rem;
+}
+
+.applicationHeader svg{
+    fill: #FFF;
+    width: 320px;
 }
