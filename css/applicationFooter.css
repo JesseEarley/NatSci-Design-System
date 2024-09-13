@@ -1,3 +1,32 @@
-footer{
+.applicationFooter{
     background: #333;
+    color: #FFF;
+    padding: 2rem;
+}
+
+.applicationFooter svg{
+    fill: #FFF;
+    max-width: 350px;
+}
+.applicationFooter a{
+    color: #FFF;
+}
+
+.applicationFooter ul{
+    margin: 0;
+}
+
+.applicationFooter ul li{
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+}
+
+.applicationFooter #FooterLinks li,
+.applicationFooter #FooterInfo li{
+    border-left: 1px solid #fff;
+}
+.applicationFooter #FooterLinks li:first-child,
+.applicationFooter #FooterInfo li:first-child{
+    border:none;
 }
