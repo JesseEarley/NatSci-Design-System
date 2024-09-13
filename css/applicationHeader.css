@@ -7,3 +7,12 @@
     fill: #FFF;
     width: 320px;
 }
+
+.applicationHeader__masthead a{
+    color: #FFF;
+    text-decoration: none;
+}
+    
+.applicationHeader__appName{
+        font-size: 2.5rem;
+    }
